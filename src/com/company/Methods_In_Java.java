@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Methods_In_Java {
@@ -51,6 +52,17 @@ public class Methods_In_Java {
         }
 
         obj1.driverLaunch("kh");
+
+        String stu1[] = obj1.getStudentNames("July");
+
+        for (int i =0; i<=stu1.length-1; i++ ) {
+
+            System.out.println(stu1[i]);
+
+        }
+
+        ArrayList<String> lik = obj1.getLinks("Login");
+        System.out.println(lik);
 
     }
 
@@ -205,6 +217,73 @@ public class Methods_In_Java {
         return browserFlag;
 
     }
+
+    // WAP to return an array from method
+
+    public String[] getStudentNames (String batch){
+
+        String studentNames[] = null;
+
+        if (batch.equalsIgnoreCase( "July")){
+
+            studentNames = new String[3];
+
+            studentNames[0] = "Akshay";
+            studentNames[1] = "Sushant";
+            studentNames[2] = "Vikram";
+        }
+        else if (batch.equalsIgnoreCase("October")){
+
+            studentNames = new String[3];
+
+            studentNames[0] = "Priya";
+            studentNames[1] = "Sushil";
+            studentNames[2] = "Parag";
+
+        }
+        else {
+
+            System.out.println("There were no Classes during this time");
+        }
+
+        return studentNames;
+
+
+    }
+
+    //Method returning ArrayList
+
+    public ArrayList<String> getLinks(String pageName){
+
+        ArrayList<String> links = new ArrayList<String>();
+
+        if (pageName.equalsIgnoreCase("Login")){
+
+            links.add("Login");
+            links.add("Sign -up");
+            links.add("Plicy");
+            links.add("Forgot Password");
+        }
+        else if(pageName.equalsIgnoreCase("Home")){
+
+            links.add("Products");
+            links.add("Cart");
+            links.add("favoriate");
+
+        }
+        else {
+
+            System.out.println("Page does not exist");
+
+        }
+
+        return links;
+
+
+    }
+
+
+
 
 }
 
