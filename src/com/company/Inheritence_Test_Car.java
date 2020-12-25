@@ -31,7 +31,7 @@ public class Inheritence_Test_Car {
 
         //car2.autoparking(); This method cannot be called which is unique to Child Class & not present in Parent Class
         // This is Call Referrence Type Check
-        
+
         Inheritance_Child_BMW bmw2 = new Inheritence_Test_Car();
 
     }
