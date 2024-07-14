@@ -200,18 +200,16 @@ public class Methods_In_Java {
 
         boolean browserFlag = false;
 
-        switch (nameOfbrowser){
-
-            case "ff": System.out.println("Launching Firefox");
+        switch (nameOfbrowser) {
+            case "ff" -> {
+                System.out.println("Launching Firefox");
                 browserFlag = true;
-            break;
-
-            case "Safari" : System.out.println("Launching Safari");
+            }
+            case "Safari" -> {
+                System.out.println("Launching Safari");
                 browserFlag = true;
-            break;
-
-            default: System.out.println("Enter Correct Browser Name ");
-            break;
+            }
+            default -> System.out.println("Enter Correct Browser Name ");
         }
 
         return browserFlag;
@@ -261,14 +259,14 @@ public class Methods_In_Java {
 
             links.add("Login");
             links.add("Sign -up");
-            links.add("Plicy");
+            links.add("Policy");
             links.add("Forgot Password");
         }
         else if(pageName.equalsIgnoreCase("Home")){
 
             links.add("Products");
             links.add("Cart");
-            links.add("favoriate");
+            links.add("favorite");
 
         }
         else {

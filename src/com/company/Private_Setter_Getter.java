@@ -1,6 +1,6 @@
 package com.company;
 
-public class Private_Set_Get {
+public class Private_Setter_Getter {
 
     private String password;
 
@@ -12,7 +12,9 @@ public class Private_Set_Get {
 
     }
 
-    public String getPassword() {  // Setter & Getters  can be generated using generate in intellij
+    public String getPassword() {
+
+        // Setter & Getters  can be generated using generate in intellij
         // Setters are used to et the values & getter are used to get the values for private data members
         //Encapsulation is Accessing the private members via Public layer and not giving the access to the user directy
 
@@ -23,11 +25,11 @@ public class Private_Set_Get {
         this.password = password;
     }
 
-    public String getFinancialStatemet() {
+    public String getFinancialStatement() {
         return financialStatemet;
     }
 
-    public void setFinancialStatemet(String financialStatemet) {
+    public void setFinancialStatement(String financialStatemet) {
         this.financialStatemet = financialStatemet;
     }
 }

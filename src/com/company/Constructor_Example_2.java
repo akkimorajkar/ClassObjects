@@ -18,7 +18,7 @@ public class Constructor_Example_2 {
      */
 
     public Constructor_Example_2(String brand, String type, int amount) { // constructors can be generated using generate in intellij
-        this.brand = brand;  // "this" keyword is used to access the class variables and assining them the value of local variable
+        this.brand = brand;  // "this" keyword is used to access the class variables and assigning them the value of local variable
         this.type = type;
         this.amount = amount;
     }
@@ -49,7 +49,7 @@ public class Constructor_Example_2 {
 
         Constructor_Example_2 const3 = new Constructor_Example_2("Mercedes" , "Sedan",90,"4 Wheel Drive");
 
-        System.out.println(const2.brand +" " + const2.type+" " + const2.amount +" "+ const2.wheelType);
+        System.out.println(const3.brand +" " + const3.type+" " + const3.amount +" "+ const3.wheelType);
 
     }
 

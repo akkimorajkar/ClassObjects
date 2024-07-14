@@ -1,6 +1,6 @@
 package com.company;
 
-import com.sun.jmx.mbeanserver.NamedObject;
+//import com.sun.jmx.mbeanserver.NamedObject;
 
 public class Static_Vs_Non_Static {
 
